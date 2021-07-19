@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page WebSite</title>
+
+    <!-----CSS Main File----->
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" 
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" 
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!--#####$$$$$ first section starts $$$$$#####-->
+
+    <div id="first" class="first_section">
+        <div class="slides">
+            <!-----radio buttons start----->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!-----radio buttons end----->
+
+            <!-----Options Starts----->
+            <div class="options">
+                <a href="#first">Home</a>
+                <a href="#second">Techs</a>
+                <a href="#third">Projects</a>
+                <a href="#four">Pricing</a>
+                <a href="#five">Team</a>
+                <a href="#six">Contact</a>
+            </div>
+            <!-----Options Starts----->
+
+            <!-----title of the page starts----->
+            <div class="title_1">
+                <h2>NewTech</h2>
+            </div>
+            <!-----title of the page end----->
+
+            <!-----slider images start----->
+            <div class="slide first">
+                <img src="C:\Users\Ishwarya\Desktop\DOMJS\image1.jpg" alt="image1" width="100%" height="600" >
+            </div>
+            <div class="slide">
+                <img src="C:\Users\Ishwarya\Desktop\DOMJS\image2.jpg" alt="image2" width="100%" height="600">
+            </div>
+            <div class="slide">
+                <img src="C:\Users\Ishwarya\Desktop\DOMJS\image3.jpg" alt="image3" width="100%" height="600">
+            </div>
+            <div class="slide">
+                <img src="C:\Users\Ishwarya\Desktop\DOMJS\image4.jpg" alt="image4" width="100%" height="600">
+            </div>
+            <!-----slider images end----->
+
+            <!-----Content starts----->
+            <div class="description">
+                <h1>WELCOME TO THE TECHNOLOGIES FEILD!</h1>
+                <h3>IT'S NOT THAT WE USE TECHNOLOGY, WE LIVE TECHNOLOGY.</h3>
+            </div>
+            <!-----Content end----->
+
+            <!-----First Buttons starts----->
+            <div class="buttons">
+                <button class="button">Learn More</button>
+            </div>
+            <!-----First Buttons starts----->
+
+            <!-----automatic navigation start----->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-----automatic navigation end----->
+        </div>
+
+        <!-----manual navigation start----->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-----manual navigation end----->
+
+    </div>
+
+    <script type="text/javascript">
+        var count=1
+        setInterval(function(){
+            document.getElementById('radio'+ count).checked = true;
+            count++;
+            if(count>4){
+                count=1;
+            }
+        },4000);
+    </script>
+
+    <!--#####$$$$$ first section ends $$$$$#####-->
+
+    <!--#####$$$$$ second section starts $$$$$#####-->
+
+    <div id="second" class="second_section">
+        <div class="second_title">
+            <h2>TECHNOLOGIES</h2>
+        </div>
+        <div class="row slider">
+            <div class="techs">
+                <div class="tech1">
+                    <img class="mySlides" src="C:\Users\Ishwarya\Desktop\DOMJS\web.jpg" alt="">
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech2">
+                    <img class="mySlides" src="C:\Users\Ishwarya\Desktop\DOMJS\android.jpg" alt="">
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech3">
+                    <img class="mySlides" src="C:\Users\Ishwarya\Desktop\DOMJS\data.jpg" alt="">
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech4">
+                    <img class="mySlides" src="C:\Users\Ishwarya\Desktop\DOMJS\ML.jpeg" alt="">
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech5">
+                    <img class="mySlides" src="C:\Users\Ishwarya\Desktop\DOMJS\AI.jpg" alt="">
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech6">
+                    <img class="mySlides" src="C:\Users\Ishwarya\Desktop\DOMJS\cloud.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" 
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript">
+        $('.slider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 4,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+        });
+    </script>
+
+    <!--#####$$$$$ second section ends $$$$$#####-->
+
+    <!--#####$$$$$ third section starts $$$$$#####-->
+
+    <div id="third" class="third_section">
+        <div class="third_title">
+            <h2>PROJECTS</h2>
+        </div>
+        <div class="row slider1">
+            <div class="techs">
+                <div class="tech1">
+                    <h2 class="pro_name">Web Development</h2>
+                    <p id="web_para">Use below Projects as practice or enhance your skills with these fun web development 
+                        project ideas. Front End and Back End both the projects are available.
+                        From beginner web development projects to more advanced ones, find your next coding project now.</p>
+                    <div class="span_items">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="btn_pro">
+                        <button class="button">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech2">
+                    <h2 class="pro_name">Android Development</h2>
+                    <p id="web_para">Use below Projects as practice or enhance your skills with these fun android development 
+                        project ideas. Practice in android studio and learn new things to build your career.
+                        From beginner android development projects to more advanced ones, find your next coding project now.</p>
+                    <div class="span_items">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="btn_pro">
+                        <button class="button">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech3">
+                    <h2 class="pro_name">Data Science</h2>
+                    <p id="web_para">Use below Projects as practice or enhance your skills with these fun data science 
+                        project ideas. start building out your portfolio with real data science projects today. Learn more applications.
+                        From beginner level projects to more advanced ones, find your next coding project now.</p>
+                    <div class="span_items">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="btn_pro">
+                        <button class="button">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech4">
+                    <h2 class="pro_name">Machine Learning</h2>
+                    <p id="web_para">These machine learning project ideas will help you in 
+                        learning all the practicalities that you need to succeed in your career and to make you employable in the industry.
+                        From beginner level projects to more advanced ones, find your next coding project now.</p>
+                    <div class="span_items">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="btn_pro">
+                        <button class="button">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech5">
+                    <h2 class="pro_name">Artificial Intelligence</h2>
+                    <p id="web_para">Use below Projects as practice or enhance your skills with these interesting artificial 
+                        intelligence project ideas. Learn advanced versions of intelligence.
+                        From beginner level projects to more advanced ones, find your next coding project now.</p>
+                    <div class="span_items">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                    <div class="btn_pro">
+                        <button class="button">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech6">
+                    <h2 class="pro_name">Cloud Computing</h2>
+                    <p id="web_para">Use below Projects as practice or enhance your skills with these cloud 
+                        project ideas. Get cloud security projects, cloud optimization systems as well as other cloud based projects for various domains.
+                        From beginner level projects to more advanced ones, find your next coding project now.</p>
+                    <div class="span_items">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <div class="btn_pro">
+                        <button class="button">Enroll Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--#####$$$$$ third section ends $$$$$#####-->
+
+    <script type="text/javascript">
+        $('.slider1').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 4,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+        });
+    </script>
+
+    <!--#####$$$$$ fourth section starts $$$$$#####-->
+
+    <div id="four" class="fourth_section">
+        <div class="fourth_title">
+            <h3>PRICING</h3>
+        </div>
+        <div class="row slider2">
+            <div class="techs">
+                <div class="tech1">
+                    <h2 class="pro_name">Web Development</h2>
+                    <p id="web_para">Web Development real time projects.
+                        <br> <br> <br> 12 FRONT END + 8 BACK END
+                    </p>
+                    <h2 class="price">₹ 12,000</h2>
+                    <div class="span_items">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+                <div class="btn_pro">
+                    <button class="button">Enroll Now</button>
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech2">
+                    <h2 class="pro_name">Android Development</h2>
+                    <p id="web_para">Android Development real time projects.
+                        <br> <br> <br> 25 PROJECTS
+                    </p>
+                    <h2 class="price">₹ 15,000</h2>
+                    <div class="span_items">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="btn_pro">
+                    <button class="button">Enroll Now</button>
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech3">
+                    <h2 class="pro_name">Data Science</h2>
+                    <p id="web_para">Data Science real time projects.
+                        <br> <br> <br> 20 PROJECTS
+                    </p>
+                    <h2 class="price">₹ 10,000</h2>
+                    <div class="span_items">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+                <div class="btn_pro">
+                    <button class="button">Enroll Now</button>
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech4">
+                    <h2 class="pro_name">Machine Learning</h2>
+                    <p id="web_para">Machine Learning real time projects.
+                        <br> <br> <br> 20 PROJECTS
+                    </p>
+                    <h2 class="price">₹ 14,000</h2>
+                    <div class="span_items">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="btn_pro">
+                    <button class="button">Enroll Now</button>
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech5">
+                    <h2 class="pro_name">Artificial Intelligence</h2>
+                    <p id="web_para">Artificial Intelligence real time projects.
+                        <br> <br> <br> 20 PROJECTS
+                    </p>
+                    <h2 class="price">₹ 12,000</h2>
+                    <div class="span_items">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+                <div class="btn_pro">
+                    <button class="button">Enroll Now</button>
+                </div>
+            </div>
+            <div class="techs">
+                <div class="tech6">
+                    <h2 class="pro_name">Cloud Computing</h2>
+                    <p id="web_para">Cloud Computing real time projects.
+                        <br> <br> <br> 20 PROJECTS
+                    </p>
+                    <h2 class="price">₹ 12,500</h2>
+                    <div class="span_items">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+                <div class="btn_pro">
+                    <button class="button">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--#####$$$$$ fourth section ends $$$$$#####-->
+
+    <script type="text/javascript">
+        $('.slider2').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 4,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+        ]
+        });
+    </script>
+
+    <!--#####$$$$$ fivth section starts $$$$$#####-->
+
+    <div id="five" class="fivth_section">
+        <div class="fivth_title">
+            <h3>TEAM MEMBERS</h3>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="C:\Users\Ishwarya\Desktop\DOMJS\team1.jpg" alt="" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="C:\Users\Ishwarya\Desktop\DOMJS\team0.jpg" alt="" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="C:\Users\Ishwarya\Desktop\DOMJS\team3.png" alt="" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="C:\Users\Ishwarya\Desktop\DOMJS\team4.jpg" alt="" onclick="myFunction(this);">
+            </div>
+        </div>
+        
+        <div class="container">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        
+            <img id="expandedImg">
+        
+            <div id="imgtext"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+            imgText.innerHTML = imgs.alt;
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+    
+    <!--#####$$$$$ fivth section ends $$$$$#####-->
+
+    <!--#####$$$$$ sixth section starts $$$$$#####-->
+
+    <div id="six" class="sixth_section">
+        <div class="sixth_title">
+            <h2>CONTACT DETAILS</h2>
+        </div>
+        <div class="details">
+            <p id="info">
+                <strong>Address : </strong>
+                <br>40 Castlemaline Street
+                <br>appartment no 2345
+                <br>nearer police station
+                <br>Dist Hyderabad
+            </p>
+            <p id="info">
+                <strong>Phone No :</strong>
+                <br> +91 9999999999
+                <strong>Email : </strong>
+                <br> support@gmail.com
+            </p>
+        </div>
+        <div class="details">
+            <p id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d487295.02532044525!2d78.12785129924684!3d17.41215307568293!2m3!
+                1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1626001309911!5m2!1sen!2sin" 
+                width="500" height="350" style="border: 1px solid black; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+            </p>
+        </div>
+        <div class="details">
+            <p id="msg">
+                <label for="email" class="input-grp"></label>
+                <input type="email" id="email" placeholder="Enter E-mail" style="padding: 10px;
+                border: 2px solid black;margin-left: 35px;"><br><br>
+                <label for="number" class="input-grp"></label>
+                <strong style="margin-left: 30%;">OR</strong><br><br>
+                <input type="number" id="phoneNum" placeholder="Enter Phone Number" style="padding: 10px; 
+                border: 2px solid black; margin-left: 50px;"><br><br>
+                <button class="btn">CONTACT NOW</button>
+            </p>
+        </div>
+    </div>
+    
+    <!--#####$$$$$ sixth section ends $$$$$#####-->
+
+    <!--#####$$$$$Copyrights Footer starts #####$$$$$-->
+
+    <footer id="footer">
+        <div class="box">
+            <div class="socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkdin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        <div class="copyright">
+            &copy; Copyright 2021 <strong><span>THE NEW TECH</span></strong>.  All Rights Reserved
+        </div>
+    
+        <div class="credits">
+            Designed by <a href="">INDIA</a>
+        </div>
+        </div>
+    </footer>
+
+    <!--#####$$$$$Copyrights Footer ends #####$$$$$-->
+
+</body>
+</html>
